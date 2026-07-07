@@ -93,8 +93,10 @@ Final cleaned datasets:
 ---
 
 ## Power BI Dashboard Preview
+![Business Overview](images/overview.png)
 
 ### Business Overview
+![Delivery and Customer Satisfaction](images/delivery_customer_satisfaction.png)
 
 
 
@@ -223,12 +225,12 @@ Although most customers gave positive reviews, low-score reviews still represent
 
 ```DAX
 Total Revenue =
-SUM('olist_order_items_master'[price])
+SUM('olist_order_items_master_mysql'[price])
 ```
 
 ```DAX
 Total Orders =
-DISTINCTCOUNT('olist_order_items_master'[order_id])
+DISTINCTCOUNT('olist_order_items_master_mysql'[order_id])
 ```
 
 ```DAX
@@ -238,14 +240,14 @@ DIVIDE([Total Revenue], [Total Orders])
 
 ```DAX
 Average Review Score =
-AVERAGE('olist_order_items_master'[avg_review_score])
+AVERAGE('olist_order_items_master_mysql'[avg_review_score])
 ```
 
 ```DAX
 Late Orders =
 CALCULATE(
     [Total Orders],
-    'olist_order_items_master'[is_late] = 1
+    'olist_order_items_master_mysql'[is_late] = 1
 )
 ```
 
