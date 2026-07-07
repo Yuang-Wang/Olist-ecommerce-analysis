@@ -93,7 +93,8 @@ Final cleaned datasets:
 ---
 
 ## Power BI Dashboard Preview
-![Business Overview](images/overview.png)
+
+!Overview](images/overview.png)
 
 ### Business Overview
 ![Delivery and Customer Satisfaction](images/delivery_customer_satisfaction.png)
