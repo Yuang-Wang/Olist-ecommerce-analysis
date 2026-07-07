@@ -207,7 +207,7 @@ These categories may require further investigation into seller performance, logi
 
 ### 6. Review scores are generally positive
 
-The review score distribution is strongly skewed toward 5-star reviews.
+Most of the review scores are 4 and 5. However, there are a large amount of 1 (around 11k) which needs attention.
 
 | Review Score | Orders |
 |---|---:|
